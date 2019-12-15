@@ -24,6 +24,21 @@ size_t	ft_strlen(const char *s)
 	return (count);
 }
 
+char	*ft_strchr(const char *s, int c)
+{
+	int		count;
+
+	count = -1;
+	if (!s)
+		return (NULL);
+	while (s[++count])
+		if (s[count] == c)
+			return (char *)(s + count);
+	if (s[count] == c)
+		return (char *)(s + count);
+	return (0);
+}
+
 t_gnl	*ft_create_list(int fd)
 {
 	t_gnl	*lst;
@@ -53,19 +68,4 @@ t_gnl	*ft_lstadd(t_gnl **alst, t_gnl *new)
 		new->next = *alst;
 	*alst = new;
 	return (*alst);
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	int		count;
-
-	count = -1;
-	if (!s)
-		return (NULL);
-	while (s[++count])
-		if (s[count] == c)
-			return (char *)(s + count);
-	if (s[count] == c)
-		return (char *)(s + count);
-	return (0);
 }
