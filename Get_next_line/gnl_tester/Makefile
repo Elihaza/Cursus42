@@ -1,4 +1,4 @@
-PATH_GNL = ..
+PATH_GNL = /tmp/mlf/
 
 NAME = gnl_out
 NAME_SUB = run_out
