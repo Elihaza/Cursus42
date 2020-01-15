@@ -1,24 +1,24 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_memset.c                                      .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/09 18:43:50 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/13 21:23:39 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/04 11:27:44 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/04 11:28:00 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t			count;
+	unsigned char	*ptr;
 
-	count = -1;
-	while (++count < n)
-		((unsigned char *)s)[count] = c;
-	return ((void *)s);
+	ptr = b;
+	while (len-- > 0)
+		*ptr++ = c;
+	return (b);
 }

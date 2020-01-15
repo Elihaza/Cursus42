@@ -1,36 +1,31 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_strlcpy.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/13 21:40:28 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/22 13:22:43 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/28 18:29:33 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/08/30 09:38:46 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	count;
-	size_t	size;
+	size_t	lensrc;
 
-	count = 0;
-	size = 0;
-	if (!dst)
+	if (dst == 0)
 		return (0);
-	while (src[size])
-		size++;
-	if (!dstsize)
-		return (size);
-	while (src[count] && count < dstsize - 1)
+	lensrc = ft_strlen(src);
+	if (lensrc + 1 < dstsize)
+		ft_memcpy(dst, src, lensrc + 1);
+	else if (dstsize != 0)
 	{
-		dst[count] = src[count];
-		count++;
+		ft_memcpy(dst, src, dstsize - 1);
+		dst[dstsize - 1] = '\0';
 	}
-	dst[count] = '\0';
-	return (size);
+	return (lensrc);
 }

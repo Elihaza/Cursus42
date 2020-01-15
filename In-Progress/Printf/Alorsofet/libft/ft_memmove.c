@@ -1,31 +1,38 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_memmove.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/12 20:32:40 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/25 15:53:12 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/04 15:37:33 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/04 15:37:35 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*source;
-	char	*dst;
+	char		*d;
+	char		*lastd;
+	const char	*s;
+	const char	*lasts;
 
-	source = (char *)src;
-	dst = dest;
-	if (!source && !dst)
-		return (NULL);
-	if (dst < source)
-		return (ft_memcpy(dst, source, n));
-	n++;
-	while (--n)
-		dst[n - 1] = source[n - 1];
+	if (dst == 0 && src == 0)
+		return (0);
+	d = dst;
+	s = src;
+	if (d < s)
+		while (len--)
+			*d++ = *s++;
+	else
+	{
+		lasts = s + (len - 1);
+		lastd = d + (len - 1);
+		while (len--)
+			*lastd-- = *lasts--;
+	}
 	return (dst);
 }

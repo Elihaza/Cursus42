@@ -1,33 +1,33 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_strmapi.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/24 17:53:24 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/08 17:41:23 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/08 17:41:02 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/08 17:41:03 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	count;
-	char			*tab;
+	unsigned int	i;
+	char			*str;
 
-	count = 0;
+	i = 0;
 	if (!s || !f)
 		return (NULL);
-	if (!(tab = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1))))
+	if (!(str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1))))
 		return (NULL);
-	while (s[count])
+	while (s[i])
 	{
-		tab[count] = f(count, s[count]);
-		count++;
+		str[i] = f(i, s[i]);
+		i++;
 	}
-	tab[count] = '\0';
-	return (tab);
+	str[i] = '\0';
+	return (str);
 }

@@ -1,34 +1,41 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_strlcat.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/13 22:31:18 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/25 15:57:30 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 15:01:54 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/08/31 18:22:45 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-size_t			ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	count;
-	size_t	dest_size;
-	size_t	src_size;
+	size_t i;
+	size_t j;
+	size_t k;
 
-	count = 0;
-	dest_size = ft_strlen(dst);
-	src_size = ft_strlen(src);
-	if (dest_size >= size)
-		return (src_size + size);
-	while (src[count] && (size - 1 > count + dest_size))
+	i = 0;
+	j = 0;
+	k = 0;
+	while (dst[i])
+		i++;
+	while (src[k])
+		k++;
+	if (dstsize <= i)
+		k += dstsize;
+	else
+		k += i;
+	while (src[j] && i + 1 < dstsize)
 	{
-		dst[count + dest_size] = src[count];
-		count++;
+		dst[i] = src[j];
+		i++;
+		j++;
 	}
-	dst[count + dest_size] = '\0';
-	return (dest_size + src_size);
+	dst[i] = '\0';
+	return (k);
 }

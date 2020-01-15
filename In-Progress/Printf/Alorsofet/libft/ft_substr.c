@@ -1,39 +1,40 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_substr.c                                      .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/15 14:13:51 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/07 18:55:13 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/08 17:40:39 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/08 17:40:40 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char		*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	count;
-	size_t	size;
-	char	*tab;
+	size_t			i;
+	size_t			len_newstr;
+	char			*new_str;
 
-	count = 0;
+	i = 0;
 	if (!s)
 		return (NULL);
 	if (ft_strlen(s) < start)
 		return (ft_strdup(""));
-	size = ft_strlen(s + start);
-	if (size < len)
-		len = size;
-	if (!(tab = (char *)malloc((len + 1) * sizeof(char))))
+	len_newstr = ft_strlen(s + start);
+	if (len_newstr < len)
+		len = len_newstr;
+	if (!(new_str = malloc(len + 1)))
 		return (NULL);
-	while (count < len)
+	while (i < len)
 	{
-		tab[count] = s[start + count];
-		count++;
+		new_str[i] = s[start + i];
+		i++;
 	}
-	tab[count] = '\0';
-	return (tab);
+	new_str[i] = '\0';
+	return (new_str);
 }

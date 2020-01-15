@@ -1,23 +1,26 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_calloc.c                                      .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/13 20:49:48 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/04 14:00:05 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/05 19:47:23 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/05 19:47:24 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <stdlib.h>
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char	*tab;
+	void	*ptr;
 
-	if (!(tab = (char *)malloc(nmemb * size)))
-		return (NULL);
-	return (ft_memset(tab, 0, nmemb * size));
+	ptr = malloc(count * size);
+	if (ptr == 0)
+		return (ptr);
+	ft_bzero(ptr, count * size);
+	return (ptr);
 }

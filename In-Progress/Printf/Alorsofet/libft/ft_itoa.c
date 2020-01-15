@@ -1,43 +1,56 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_itoa.c                                        .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/23 17:14:13 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/17 17:29:46 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/08 17:40:56 by ellarbi           #+#    #+#             */
+/*   Updated: 2020/01/14 15:30:48 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
+
+static	int		count_n(int n)
+{
+	int	i;
+
+	i = 1;
+	while (n >= 10)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
+}
 
 char			*ft_itoa(int n)
 {
-	int		size;
-	int		neg;
+	int		s;
+	int		len;
 	char	*tab;
 
-	size = ft_numlen(n);
-	neg = 0;
+	s = 0;
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	if (n < 0)
 	{
 		n = -n;
-		neg = 1;
+		s = 1;
 	}
-	if (!(tab = (char *)malloc(sizeof(char) * (size + 1 + neg))))
+	len = count_n(n);
+	if (!(tab = malloc(len + 1 + s)))
 		return (NULL);
-	if (neg)
+	if (s)
 		tab[0] = '-';
-	tab[size + neg] = '\0';
-	while (size)
+	tab[len + s] = '\0';
+	while (len)
 	{
-		tab[size - (neg ? 0 : 1)] = n % 10 + '0';
+		tab[len - (s ? 0 : 1)] = n % 10 + '0';
 		n = n / 10;
-		size--;
+		len--;
 	}
 	return (tab);
 }

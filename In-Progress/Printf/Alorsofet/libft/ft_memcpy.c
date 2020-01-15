@@ -1,30 +1,28 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_memcpy.c                                      .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/12 13:56:35 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/16 22:57:57 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/04 14:50:49 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/04 14:50:51 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	count;
-	char	*source;
-	char	*d;
+	char		*strd;
+	const char	*strs;
 
-	count = -1;
-	source = (char *)src;
-	d = (char *)dest;
-	if (!src && !dest)
+	if (dst == 0 && src == 0)
 		return (0);
-	while (++count < n)
-		d[count] = source[count];
-	return (d);
+	strd = (char *)dst;
+	strs = (const char*)src;
+	while (n--)
+		*strd++ = *strs++;
+	return (dst);
 }

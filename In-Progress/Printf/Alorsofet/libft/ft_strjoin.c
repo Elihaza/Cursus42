@@ -1,37 +1,36 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_strjoin.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/15 16:04:22 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/22 04:47:40 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/08 17:34:22 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/08 17:34:24 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	count;
-	size_t	s1_size;
-	char	*tab;
+	char	*new_str;
+	size_t	i;
+	size_t	lens1;
 
-	count = -1;
+	i = -1;
 	if (!s1 || !s2)
 		return (NULL);
-	s1_size = ft_strlen(s1);
-	if (!(tab = (char *)malloc((s1_size + ft_strlen(s2) + 1) * sizeof(char))))
+	lens1 = ft_strlen(s1);
+	if (!(new_str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
 		return (NULL);
-	while (s1[++count])
-		tab[count] = s1[count];
-	count = -1;
-	while (s2[++count])
-		tab[s1_size + count] = s2[count];
-	tab[s1_size + count] = '\0';
-	free((char *)s1);
-	free((char *)s2);
-	return (tab);
+	while (s1[++i])
+		new_str[i] = s1[i];
+	i = -1;
+	while (s2[++i])
+		new_str[lens1 + i] = s2[i];
+	new_str[lens1 + i] = '\0';
+	return (new_str);
 }

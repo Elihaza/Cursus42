@@ -1,35 +1,35 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_memccpy.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/12 17:16:51 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/31 16:59:38 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/04 14:57:09 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/04 14:57:12 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t			count;
-	unsigned char	*source;
-	unsigned char	*d;
+	unsigned int	i;
+	const char		*source;
+	char			*dest;
+	char			*ptr;
 
-	count = 0;
-	source = (unsigned char *)src;
-	d = (unsigned char *)dest;
-	if (!src && !dest)
-		return (NULL);
-	while (count < n)
+	dest = (char *)dst;
+	source = (const char *)src;
+	i = 0;
+	ptr = 0;
+	while (i < n && ptr == 0)
 	{
-		d[count] = source[count];
-		if (source[count] == (unsigned char)c)
-			return (d + count + 1);
-		count++;
+		dest[i] = source[i];
+		if (source[i] == ((char)c))
+			ptr = dest + i + 1;
+		i++;
 	}
-	return (0);
+	return (ptr);
 }

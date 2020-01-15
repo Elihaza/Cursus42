@@ -1,33 +1,33 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_strnstr.c                                     .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/09 18:44:30 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/25 16:43:29 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/05 19:16:31 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/05 19:16:34 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *s, const char *need, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t		i;
-	size_t		j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
-	if (need[0] == '\0')
-		return ((char *)s);
-	while (s[i] && i < len)
+	if (needle[0] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] && i < len)
 	{
-		while (s[i + j] == need[j] && need[j] && i + j < len)
+		while (haystack[i + j] == needle[j] && needle[j] && j + i < len)
 			j++;
-		if (need[j] == '\0')
-			return ((char *)&s[i]);
+		if (needle[j] == '\0')
+			return ((char *)&haystack[i]);
 		i++;
 		j = 0;
 	}

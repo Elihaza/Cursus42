@@ -1,27 +1,28 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_memchr.c                                      .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/13 18:46:14 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/14 01:36:49 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/04 16:59:22 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/04 16:59:23 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t			count;
-	unsigned char	*str;
+	const char	*str;
 
-	count = -1;
-	str = (unsigned char *)s;
-	while (++count < n)
-		if (str[count] == (unsigned char)c)
-			return ((void *)str + count);
-	return (0);
+	str = (const char *)s;
+	while (n-- > 0)
+	{
+		if (*str == c)
+			return (void *)str;
+		str++;
+	}
+	return (NULL);
 }

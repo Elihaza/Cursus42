@@ -1,31 +1,33 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   ft_strdup.c                                      .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: amonteli <amonteli@student.le-101.fr>      +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/13 21:25:14 by amonteli     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/14 01:40:52 by amonteli    ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/05 19:46:03 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/05 19:46:04 by ellarbi          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+char	*ft_strdup(const char *s1)
 {
-	int		count;
-	char	*tab;
+	int		i;
+	int		len;
+	char	*str;
 
-	count = 0;
-	while (s[count])
-		count++;
-	if (!(tab = (char *)malloc((count + 1) * sizeof(char))))
+	len = ft_strlen(s1);
+	if (!(str = malloc(sizeof(*str) * (len + 1))))
 		return (NULL);
-	count = -1;
-	while (s[++count])
-		tab[count] = s[count];
-	tab[count] = '\0';
-	return (tab);
+	i = 0;
+	while (i < len)
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
