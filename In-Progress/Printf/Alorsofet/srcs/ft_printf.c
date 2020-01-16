@@ -100,30 +100,3 @@ int					ft_printf(const char *format, ...)
 	va_end(p.va);
 	return (pf_print(1, &p));
 }
-
-/*
-**	ft_dprintf copy of dprintf.
-**	@param:		int fd, const char *format, stargs ...
-**	@return:	size printed by ft_dprintf.
-*/
-
-int					ft_dprintf(int fd, const char *format, ...)
-{
-	t_pfinfo	p;
-
-	if (!ft_strchr(format, '%') && write(fd, format, ft_strlen(format)))
-		return (ft_strlen(format));
-	pf_init(&p, format);
-	va_start(p.va, format);
-	while (ft_strchr(p.format + p.count, '%'))
-	{
-		pf_stradd(&p, ft_substr(format, p.count,
-		ft_strchr_len(p.format + p.count, '%')));
-		p.count += ft_strchr_len(p.format + p.count, '%');
-		pf_parse(&p);
-		pf_convert(&p);
-	}
-	pf_stradd(&p, ft_substr(format, p.count, ft_strlen(p.format + p.count)));
-	va_end(p.va);
-	return (pf_print(fd, &p));
-}
