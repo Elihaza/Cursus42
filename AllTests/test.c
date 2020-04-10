@@ -15,7 +15,7 @@
 void f(void)
 {
     static int i = 0; /* i sera initialisée à 0 à la compilation seulement */
-    int j = 0; /* j sera initialisée à chaque appel de f */;
+    int j = 0; /* j sera initialisée à chaque appel de f */Ò
     i++;
     j++;
     printf("i vaut %d et j vaut %d.\n", i, j);
