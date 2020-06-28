@@ -21,7 +21,7 @@
 static	t_pfinfo	*pf_init(t_pfinfo *list, const char *format)
 {
 	list->flags = 0;
-	list->width = 0;
+    list->width = 0;
 	list->precision = 0;
 	list->type = 0;
 	list->content = NULL;

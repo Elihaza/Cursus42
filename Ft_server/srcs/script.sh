@@ -1,2 +1,0 @@
-sh init.sh
-tail
