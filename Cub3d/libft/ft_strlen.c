@@ -3,6 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
+<<<<<<< HEAD
 /*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 16:14:38 by ellarbi           #+#    #+#             */
@@ -18,6 +19,21 @@ size_t	ft_strlen(const char *s)
 
 	i = 0;
 	while (s[i])
+=======
+/*   By: pmouhali <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/18 13:47:33 by pmouhali          #+#    #+#             */
+/*   Updated: 2020/01/18 13:47:35 by pmouhali         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_strlen(const char *str)
+{
+	int i;
+
+	i = 0;
+	while (str && str[i])
+>>>>>>> e0eb398aa0f075849c0b55de1001e8c793dd29df
 		i++;
 	return (i);
 }
