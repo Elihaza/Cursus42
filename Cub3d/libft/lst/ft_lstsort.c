@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frdescam <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/08 12:43:15 by frdescam          #+#    #+#             */
-/*   Updated: 2020/07/25 13:40:39 by frdescam         ###   ########.fr       */
+/*   Created: 2020/03/08 12:43:15 by ellarbi           #+#    #+#             */
+/*   Updated: 2020/07/25 13:40:39 by ellarbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,64 +74,3 @@ void		ft_lstsort(t_list **lst, int (*f)(void *content1, void *content2))
 		}
 	}
 }
-/*
-**#include "stdio.h"
-**
-**int		f(void *content1, void *content2)
-**{
-**	if (atoi(content1) > atoi(content2))
-**		return (1);
-**	return (0);
-**}
-**
-**int		main(void)
-**{
-**	t_list	*lst1;
-**	t_list	*new_elem;
-**	char	*str1;
-**	char	*str2;
-**	char	*str3;
-**	char	*str4;
-**	char	*str5;
-**	char	*str6;
-**	char	*str7;
-**
-**	lst1 = NULL;
-**	str1 = ft_strdup("1");
-**	str2 = ft_strdup("2");
-**	str3 = ft_strdup("3");
-**	str4 = ft_strdup("4");
-**	str5 = ft_strdup("5");
-**	str6 = ft_strdup("6");
-**	str7 = ft_strdup("7");
-**	new_elem = ft_lstnew(str5);
-**	ft_lstadd_back(&lst1, new_elem);
-**	new_elem = ft_lstnew(str7);
-**	ft_lstadd_back(&lst1, new_elem);
-**	new_elem = ft_lstnew(str3);
-**	ft_lstadd_back(&lst1, new_elem);
-**	new_elem = ft_lstnew(str4);
-**	ft_lstadd_back(&lst1, new_elem);
-**	new_elem = ft_lstnew(str1);
-**	ft_lstadd_back(&lst1, new_elem);
-**	new_elem = ft_lstnew(str2);
-**	ft_lstadd_back(&lst1, new_elem);
-**	new_elem = ft_lstnew(str6);
-**	ft_lstadd_back(&lst1, new_elem);
-**
-**	t_list	*lst1_tmp = lst1;
-**	while (lst1_tmp)
-**	{
-**		printf("%s\n", lst1_tmp->content);
-**		lst1_tmp = lst1_tmp->next;
-**	}
-**	ft_lstsort(&lst1, &f);
-**	printf("\n\n");
-**	lst1_tmp = lst1;
-**	while (lst1_tmp)
-**	{
-**		printf("%s\n", lst1_tmp->content);
-**		lst1_tmp = lst1_tmp->next;
-**	}
-**}
-*/

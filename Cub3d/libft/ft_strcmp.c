@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frdescam <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/11 11:10:34 by frdescam          #+#    #+#             */
-/*   Updated: 2020/05/13 11:44:03 by frdescam         ###   ########.fr       */
+/*   Created: 2019/06/11 11:10:34 by ellarbi           #+#    #+#             */
+/*   Updated: 2020/05/13 11:44:03 by ellarbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,3 @@ int		ft_strcmp(const char *s1, const char *s2)
 	else
 		return (-s2[i]);
 }
-/*
-**#include <stdio.h>
-**#include <string.h>
-**
-**int		main(void)
-**{
-**	printf("ft_strcmp : %d\n", ft_strcmp("test", "teste"));
-**	printf("strcmp : %d\n", strcmp("test", "teste"));
-**}
-*/

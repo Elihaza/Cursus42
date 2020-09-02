@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frdescam <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/11 23:35:11 by frdescam          #+#    #+#             */
-/*   Updated: 2019/11/11 23:41:57 by frdescam         ###   ########.fr       */
+/*   Created: 2019/11/11 23:35:11 by ellarbi           #+#    #+#             */
+/*   Updated: 2019/11/11 23:41:57 by ellarbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,3 @@ char	*ft_strndup(const char *s1, size_t n)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-**int		main(void)
-**{
-**	printf("%s\n", ft_strndup("Hello world!", 5));
-**	return (0);
-**}
-*/
