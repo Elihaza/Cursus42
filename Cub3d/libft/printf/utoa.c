@@ -51,12 +51,3 @@ char				*utoa(unsigned int n)
 	convert_nb(outstr, n, nb_digit);
 	return (outstr);
 }
-/*
-**#include <stdio.h>
-**
-**int		main(void)
-**{
-**	printf("\n%s\n", ft_itoa(10050003));
-**
-**}
-*/

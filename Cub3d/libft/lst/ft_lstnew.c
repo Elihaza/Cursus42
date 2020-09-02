@@ -23,17 +23,3 @@ t_list	*ft_lstnew(const char *name, void *content)
 	new_elem->next = NULL;
 	return (new_elem);
 }
-/*
-**#include <stdio.h>
-**
-**int		main(void)
-**{
-**	char	str[] = "lorem ipsum dolor sit";
-**	char	name[] = "this is my name";
-**
-**	t_list	*elem;
-**
-**	elem = ft_lstnew(name, (void *)str);
-**	printf("\nname : %s\ncontent : %s\n", elem->name, (char *)elem->content);
-**}
-*/

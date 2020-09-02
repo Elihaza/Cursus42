@@ -65,12 +65,3 @@ char				*ft_itoa(int n)
 	convert_nb(outstr, n_l, nb_digit, sign);
 	return (outstr);
 }
-/*
-**#include <stdio.h>
-**
-**int		main(void)
-**{
-**	printf("\n%s\n", ft_itoa(10050003));
-**
-**}
-*/

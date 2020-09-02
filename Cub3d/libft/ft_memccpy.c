@@ -35,22 +35,3 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		return (&dst_c[i]);
 	}
 }
-/*
-**#include <stdio.h>
-**#include <string.h>
-**
-**int		main(void)
-**{
-**	char	src[100] = "test1 test2 testC";
-**	char	dst[100] = "aaaaaaaaaa";
-**	char	src_ft[100] = "test1 test2 testC";
-**	char	dst_ft[100] = "aaaaaaaaaa";;
-**
-**	printf("ft_memccpy : %s\nmemccpy : %s\n",
-**			(char *)ft_memccpy(dst_ft, src_ft, 'C', 17),
-**			(char *)memccpy(dst, src, 'C', 17));
-**	printf("dst : %s\nsrc :%s\ndst_ft : %s\nsrc_ft : %s", dst, src,
-**			dst_ft, src_ft);
-**	return (0);
-**}
-*/

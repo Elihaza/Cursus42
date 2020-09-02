@@ -32,10 +32,3 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-**int		main(void)
-**{
-**	printf("%s\n", ft_strdup("Hello world!"));
-**	return (0);
-**}
-*/

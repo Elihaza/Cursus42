@@ -97,20 +97,4 @@ char				**ft_split(char const *s, const char *delimiters)
 	tab[i] = NULL;
 	return (tab);
 }
-/*
-**int				main(void)
-**{
-**	char	**tab;
-**	unsigned int	i;
-**
-**	i = 0;
-**	tab = ft_split(", hello, sp    lit ,,,,  th,,,is,plz, , ", ", ");
-**	if (!tab[0])
-**		ft_putendl_fd("ok\n", 1);
-**	while (tab[i] != NULL)
-**	{
-**		ft_putendl_fd(tab[i], 1);
-**		i++;
-**	}
-**}
-*/
+

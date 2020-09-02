@@ -30,13 +30,3 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	else
 		return (-s2[i]);
 }
-/*
-**#include <stdio.h>
-**#include <string.h>
-**
-**int		main(void)
-**{
-**	printf("ft_strncmp : %d\n", ft_strncmp("test\200", "test\0", 6));
-**	printf("strncmp : %d\n", strncmp("test\200", "test\0", 6));
-**}
-*/
