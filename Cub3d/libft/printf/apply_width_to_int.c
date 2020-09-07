@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   apply_width_to_int.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 14:15:39 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/12/06 23:36:34 by ellarbi          ###   ########.fr       */

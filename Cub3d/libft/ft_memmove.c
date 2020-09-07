@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:34:48 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/10/19 22:17:08 by ellarbi          ###   ########.fr       */

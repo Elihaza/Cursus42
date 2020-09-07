@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 14:47:16 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/01/31 14:06:42 by ellarbi          ###   ########.fr       */

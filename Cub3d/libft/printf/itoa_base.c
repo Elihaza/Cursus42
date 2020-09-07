@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 21:47:38 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/11/13 23:12:38 by ellarbi          ###   ########.fr       */

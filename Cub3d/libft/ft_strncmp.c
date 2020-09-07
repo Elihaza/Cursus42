@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 11:10:34 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/10/19 11:56:50 by ellarbi          ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   raycasting_engine.h                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/02 15:33:31 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/07/25 13:23:23 by ellarbi          ###   ########.fr       */

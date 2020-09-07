@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   replace_stars.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 23:04:30 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/11/18 23:06:57 by ellarbi          ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   apply_precision.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 11:36:51 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/12/05 14:08:37 by ellarbi          ###   ########.fr       */

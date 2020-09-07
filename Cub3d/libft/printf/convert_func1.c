@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   convert_func1.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 23:26:04 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/12/05 11:45:19 by ellarbi          ###   ########.fr       */

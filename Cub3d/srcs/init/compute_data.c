@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   compute_data.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 16:00:07 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/07/26 17:46:26 by ellarbi          ###   ########.fr       */

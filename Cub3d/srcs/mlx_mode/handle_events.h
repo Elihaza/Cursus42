@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   handle_events.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/02 15:52:18 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/06/02 15:52:19 by ellarbi          ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   build_color_px.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 12:10:12 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/07/16 14:25:49 by ellarbi          ###   ########.fr       */

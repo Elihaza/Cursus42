@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   build_image.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/02 14:28:22 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/07/16 16:09:24 by ellarbi          ###   ########.fr       */

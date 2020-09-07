@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   extract_line_content.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/27 13:46:17 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/08/03 15:43:06 by ellarbi          ###   ########.fr       */

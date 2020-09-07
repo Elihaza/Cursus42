@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   read_input_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 15:59:57 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/08/02 23:56:16 by ellarbi          ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   retrieve_args.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 19:17:49 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/11/12 10:50:35 by ellarbi          ###   ########.fr       */

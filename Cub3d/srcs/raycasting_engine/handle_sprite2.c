@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   handle_sprite2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/25 13:13:50 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/07/25 13:16:01 by ellarbi          ###   ########.fr       */

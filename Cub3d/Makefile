@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/08 17:53:33 by ellarbi           #+#    #+#              #
 #    Updated: 2020/07/30 18:17:25 by ellarbi          ###   ########.fr        #

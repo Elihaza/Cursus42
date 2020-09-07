@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   apply_modifiers.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/16 16:34:23 by ellarbi           #+#    #+#             */
 /*   Updated: 2019/12/05 22:36:39 by ellarbi          ###   ########.fr       */

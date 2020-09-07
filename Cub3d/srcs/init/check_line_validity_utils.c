@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   check_line_validity_utils.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ellarbi  <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ellarbi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 19:00:27 by ellarbi           #+#    #+#             */
 /*   Updated: 2020/08/02 20:14:59 by ellarbi          ###   ########.fr       */
