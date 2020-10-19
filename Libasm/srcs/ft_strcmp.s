@@ -1,9 +1,11 @@
-		global			ft_strcmp
+;	ft_strcmp expects two string addresses in %rdi and %rsi, and return in %rax
+
+				global			ft_strcmp
 
 				section			.text
 
 ft_strcmp:		push			rdx ; sauvegarde rdx
-				push			rcx ; sauvegarde rcx
+				push			rcx ;sauvegarde rcx
 				xor				rdx, rdx ; mise a zero du compteur
 				xor				rax, rax ; mise a zero de rax
 
