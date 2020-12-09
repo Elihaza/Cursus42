@@ -1,0 +1,40 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: phpmyadmin
+  namespace: default
+  annotations:
+    metallb.universe.tf/allow-shared-ip: test
+spec:
+  type: LoadBalancer
+  selector:
+    app: phpmyadmin
+  ports:
+    - protocol: TCP
+      name: http
+      port: 5000
+      targetPort: 5000
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin
+spec:
+  selector:
+    matchLabels:
+      app: phpmyadmin
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin
+    spec:
+      containers:
+      - name: phpmyadmin
+        image: phpmyadmin
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
+          name: http

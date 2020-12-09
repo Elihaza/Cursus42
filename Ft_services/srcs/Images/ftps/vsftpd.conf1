@@ -1,0 +1,10 @@
+background=YES
+anonymous_enable=NO
+local_enable=YES
+guest_enable=NO
+write_enable=YES
+local_umask=022
+passwd_chroot_enable=YES
+pasv_enable=YES
+pasv_min_port=20010
+pasv_max_port=20011
